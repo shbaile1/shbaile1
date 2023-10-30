@@ -122,12 +122,20 @@ nav a.active {
   text-align: center;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 #documentlist {
-  background-color: black;
+  width: 45%; /* Adjust this as needed */
+  margin-left: 5%;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  background-color: black;
+}
+
+#achievements {
+  width: 45%; /* Adjust this as needed */
 }
 
 #documentlist h2 {
