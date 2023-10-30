@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shareen' Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" >
+  <script src="https://kit.fontawesome.com/167a12ce33.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Shareen's Website</h1>
+    </header>
+  <nav><ul>
+    <!--Home -->
+    <li><a href="index.html">Home</a></li>
+    <!-- Documents: Resume, certificates, etc -->
+    <li><a href='Documents.html'>Documents</a></li>
+    <!-- Education: Degrees, Certificates, Internships list -->
+    <li><a href = 'education.html'>Education</a></li>
+    <!-- About Me: Short paragraph about myself, projects, social medias -->
+    <li><a href = 'aboutme.html'>About Me</a></li>
+    <!-- Contact: social media, email, fillout form -->
+    <li><a href = 'contact.html'>Contact</a></li>
+  </ul></nav>
+    
+    <div class="imgcontainer">
+      <div id="heroimg">
+        <div class="centered">
+          <h1>Shareen Bailey</h1>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+<main>
+    <section id="contactme">
+    <h2>Get in Contact!</h2>
+    <form method="POST">
+      <!-- first name -->
+      <label for="fname">* First Name: </label>
+      <input type="text" name="fname" id="fname" value="First name" required>
+
+      <!-- Last name -->
+      <label for="lname">* Last name: </label>
+      <input type='text' name="lname" id="lname" value="Last name" required>
+      
+      <!-- drop down list -->
+      <label for="contact-reason">* Reason For Contact: </label>
+      <select name="contact-reason" id="contact-reason" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="G">General Inquiry</option>
+        <option value="J">Job Offer</option>
+        <option value="C">Collaboration Request</option>
+        <option value="O">Other</option>
+      </select>
+      
+      <!-- message/comment -->
+      <label for="message">Message/Comments: </label>
+      <textarea rows="3" cols="20" id="message">Comments</textarea>
+
+      <!-- button -->
+      <div class="button-container">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+      </div>
+    </form>
+  </section>
+</main>
+  
+    <footer>
+    <p><i><small>Copyright &copy; 2023 </small><br></i></p>
+    <small><a href="mailto:shbaile1@asu.edu">shbaile1@asu.edu</a></small><br><br>
+    
+    <div class="socialMediaLinks">
+      <div class="social-icons">
+        <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github" style="color: #6C1E72;"></i></a>
+        <a href="https://wpcareysundevils.slack.com/team/WG8KQSR7T" target="_blank"><i class="fa-brands fa-slack" style="color: #6C1E72;"></i></a>
+        <a href="https://www.instagram.com/lemon.gingertea/" target="_blank"><i class="fa-brands fa-instagram" style="color: #6C1E72;"></i></a>
+        <a href="https://www.linkedin.com/in/shareen-b-871985253/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #6C1E72;"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
