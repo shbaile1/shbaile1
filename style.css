@@ -277,8 +277,7 @@ form {
 
 form input[type="submit"],
 form input[type="reset"] {
-  width: 40%;
-  margin-right: 10px;
+  width: 49%;
 }
 
 footer {
