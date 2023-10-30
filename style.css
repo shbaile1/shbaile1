@@ -127,15 +127,15 @@ nav a.active {
   justify-content: space-between;
 }
 
-#documentlist {
-  width: 45%; /* Adjust this as needed */
-  margin-left: 5%;
-  color: white;
-  background-color: black;
+#achievements {
+  width: 45%;
+  margin-right: 5%;
 }
 
-#achievements {
-  width: 45%; /* Adjust this as needed */
+#documentlist {
+  width: 45%; 
+  color: white;
+  background-color: black;
 }
 
 #documentlist h2 {
