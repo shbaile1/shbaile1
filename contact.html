@@ -15,6 +15,7 @@
     <header>
       <h1>Shareen's Website</h1>
     </header>
+    <button id="menu-toggle">☰</button>
   <nav><ul>
     <!--Home -->
     <li><a href="index.html">Home</a></li>
@@ -40,14 +41,14 @@
 <main>
     <section id="contactme">
     <h2>Get in Contact!</h2>
-    <form action="https://formspree.io/f/moqoroeg" method="POST">
+    <form method="POST">
       <!-- first name -->
       <label for="fname">* First Name: </label>
-      <input type="text" name="fname" id="fname" placeholder="First Name" required>
+      <input type="text" name="fname" id="fname" value="First name" required>
 
       <!-- Last name -->
       <label for="lname">* Last name: </label>
-      <input type='text' name="lname" id="lname" placeholder="Last Name" required>
+      <input type='text' name="lname" id="lname" value="Last name" required>
       
       <!-- drop down list -->
       <label for="contact-reason">* Reason For Contact: </label>
@@ -58,15 +59,10 @@
         <option value="C">Collaboration Request</option>
         <option value="O">Other</option>
       </select>
-
-      <!-- Email -->
-      <label for="email">* Your Email: </label>
-      <input type="email" name="_replyto" id="email" placeholder="Email" required>
-
       
       <!-- message/comment -->
       <label for="message">Message/Comments: </label>
-      <textarea rows="3" cols="20" id="message" placeholder="Comments"></textarea>
+      <textarea rows="3" cols="20" id="message">Comments</textarea>
 
       <!-- button -->
       <div class="button-container">
@@ -83,13 +79,14 @@
     
     <div class="socialMediaLinks">
       <div class="social-icons">
-        <a href="https://shbaile1.github.io/shbaile1/" target="_blank"><i class="fa-brands fa-github" style="color: #6C1E72;"></i></a>
+        <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github" style="color: #6C1E72;"></i></a>
         <a href="https://wpcareysundevils.slack.com/team/WG8KQSR7T" target="_blank"><i class="fa-brands fa-slack" style="color: #6C1E72;"></i></a>
         <a href="https://www.instagram.com/lemon.gingertea/" target="_blank"><i class="fa-brands fa-instagram" style="color: #6C1E72;"></i></a>
         <a href="https://www.linkedin.com/in/shareen-b-871985253/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #6C1E72;"></i></a>
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
