@@ -44,11 +44,15 @@
     <form method="POST" action="https://formspree.io/f/moqoroeg">
       <!-- first name -->
       <label for="fname">* First Name: </label>
-      <input type="text" name="fname" id="fname" value="First name" required>
+      <input type="text" name="fname" id="fname" placeholder="First name" required>
 
       <!-- Last name -->
       <label for="lname">* Last name: </label>
-      <input type='text' name="lname" id="lname" value="Last name" required>
+      <input type='text' name="lname" id="lname" placeholder="Last name" required>
+
+      <!-- Email -->
+      <label for="email">* Your Email: </label>
+      <input type="email" name="_replyto" id="email" required>
       
       <!-- drop down list -->
       <label for="contact-reason">* Reason For Contact: </label>
@@ -62,7 +66,7 @@
       
       <!-- message/comment -->
       <label for="message">Message/Comments: </label>
-      <textarea rows="3" cols="20" id="message">Comments</textarea>
+      <textarea rows="3" cols="20" id="message" placeholder="comments"></textarea>
 
       <!-- button -->
       <div class="button-container">
