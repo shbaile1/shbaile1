@@ -8,7 +8,7 @@ body, h1 {
 }
 
 body {
-  background-image: url(img/thomas-galler--hH70nzkUQA-unsplash.jpg);
+  background-image: url(thomas-galler--hH70nzkUQA-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #0e2e61; 
@@ -177,7 +177,7 @@ nav {
 
 #heroimg {
   height: 700px;
-  background-image: url(img/spiral.jpg);
+  background-image: url(spiral.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
@@ -238,7 +238,7 @@ nav {
 
 #docimg {
   height: 700px;
-  background-image: url(img/adi-goldstein-EUsVwEOsblE-unsplash.jpg);
+  background-image: url(adi-goldstein-EUsVwEOsblE-unsplash.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
@@ -248,7 +248,7 @@ nav {
 
 #abtimg {
   height: 700px;
-  background-image: url(img/geometrics.jpg);
+  background-image: url(geometrics.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
@@ -257,7 +257,7 @@ nav {
 
 #eduimg {
   height: 700px;
-  background-image: url(img/boban-simonovski-qkJ8sTSg0hk-unsplash.jpg);
+  background-image: url(boban-simonovski-qkJ8sTSg0hk-unsplash.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
