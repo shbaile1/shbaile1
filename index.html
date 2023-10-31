@@ -15,6 +15,7 @@
     <header>
       <h1>Shareen's Website</h1>
     </header>
+    <button id="menu-toggle">☰</button>
   <nav><ul>
     <!--Home -->
     <li><a href="index.html">Home</a></li>
@@ -40,34 +41,38 @@
   <section id="certsanddegrees">
     <h2>My Education: </h2>
     <table>
-      <tr>
-        <th> Type </th>
-        <th> Name </th>
-        <th> Completion Year </th>
-        <th> Awarding Body </th>
-        <th> GPA </th>
-      </tr>
-      <tr >
-        <td>Bachelors of Science</td>
-        <td>Computer Information Systems</td>
-        <td>2024</td>
-        <td>Arizona State Univeristy</td>
-        <td>3.6</td>
-      </tr>
-      <tr>
-        <td>Certificate</td>
-        <td>Certificate of Cloud Security Knowledge</td>
-        <td>2024</td>
-        <td>Cloud Security Alliance</td>
-        <td> </td>
-      </tr>
-      <tr>
-        <td>Certificate</td>
-        <td>Information Security Awareness</td>
-        <td>2023</td>
-        <td>Fortinet Training Institute</td>
-        <td> </td>
-      </tr>
+      <thead>
+        <tr>
+          <th> Type </th>
+          <th> Name </th>
+          <th> Completion Year </th>
+          <th> Awarding Body </th>
+          <th> GPA </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Type">Bachelors of Science</td>
+          <td data-label="Name">Computer Information Systems</td>
+          <td data-label="Completion Year">2024</td>
+          <td data-label="Awarding Body">Arizona State University</td>
+          <td data-label="GPA">3.6</td>
+        </tr>
+        <tr>
+          <td data-label="Type">Certificate</td>
+          <td data-label="Name">Certificate of Cloud Security Knowledge</td>
+          <td data-label="Completion Year">2024</td>
+          <td data-label="Awarding Body">Cloud Security Alliance</td>
+          <td data-label="GPA">N/A</td>
+        </tr>
+        <tr>
+          <td data-label="Type">Certificate</td>
+          <td data-label="Name">Information Security Awareness</td>
+          <td data-label="Completion Year">2023</td>
+          <td data-label="Awarding Body">Fortinet Training Institute</td>
+          <td data-label="GPA">N/A</td>
+        </tr>
+      </tbody>
     </table>
   </section>
 </main>
@@ -78,13 +83,14 @@
     
     <div class="socialMediaLinks">
       <div class="social-icons">
-        <a href="https://shbaile1.github.io/shbaile1/" target="_blank"><i class="fa-brands fa-github" style="color: #6C1E72;"></i></a>
+        <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github" style="color: #6C1E72;"></i></a>
         <a href="https://wpcareysundevils.slack.com/team/WG8KQSR7T" target="_blank"><i class="fa-brands fa-slack" style="color: #6C1E72;"></i></a>
         <a href="https://www.instagram.com/lemon.gingertea/" target="_blank"><i class="fa-brands fa-instagram" style="color: #6C1E72;"></i></a>
         <a href="https://www.linkedin.com/in/shareen-b-871985253/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #6C1E72;"></i></a>
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
