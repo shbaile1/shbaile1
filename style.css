@@ -8,7 +8,7 @@ body, h1 {
 }
 
 body {
-  background-image: url(thomas-galler--hH70nzkUQA-unsplash.jpg);
+  background-image: url(img/thomas-galler--hH70nzkUQA-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #0e2e61; 
@@ -16,7 +16,7 @@ body {
 }
 
 #wrapper {         
-  background-image: linear-gradient(to bottom, #FFFFFF, skyblue);
+  background-image: linear-gradient(to bottom, black, skyblue);
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -33,7 +33,7 @@ header h1 {
 }
 
 nav {
-  height: 50px; 
+  height: 100px; 
   background-color: black;
   text-align: center;
   border: 1px solid #6C1E72;
@@ -82,9 +82,102 @@ nav a.active {
   margin-left: 16px;
 }
 
+/* Mobile view: Hide the navigation initially */
+nav {
+  display: none;
+}
+
+/* Large screen view: Always show the navigation */
+@media screen and (min-width: 1024px) {
+  nav {
+    display: block;
+  }
+  
+  #menu-toggle {
+    display: none; /* hide the menu toggle button on large screens */
+  }
+  
+  table, th, td {
+    border: 1px solid #6C1E72;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  object {
+    height: 700px;
+    width: 80%;
+  }
+
+  th, td {
+    padding: 10px;
+    color: white;
+  }
+
+  th {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    text-align: center;
+  }
+
+  table, thead, tbody, th, td, tr {
+      display: block;
+      width: 100%;
+  }
+
+  /* Hide table headers (but not display: none; for accessibility) */
+  thead {
+      display: none;  /* Since we're using data-label, we don't need the actual table headers to be visible on mobile */
+  }
+
+  tr {
+      margin-bottom: 0.625rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  td {
+      /* Behave like a "block", with some spacing */
+      border: none;
+      border-bottom: 1px solid #6C1E72;
+      margin-bottom: 0.3rem;
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: center;
+  }
+
+  td:before {
+      content: attr(data-label);
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+  }
+}
+
+#menu-toggle {
+    height: 50px;
+    background-color: black; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#menu-toggle:hover {
+    background-color: #6C1E72; /* slightly lighter black when hovered */
+}
+
+
 #heroimg {
   height: 700px;
-  background-image: url(spiral.jpg);
+  background-image: url(img/spiral.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
@@ -122,20 +215,12 @@ nav a.active {
   text-align: center;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-#achievements {
-  width: 45%;
-  margin-right: 5%;
-}
-
 #documentlist {
-  width: 45%; 
-  color: white;
   background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 #documentlist h2 {
@@ -147,22 +232,23 @@ nav a.active {
 }
 
 #documentlist ul iframe {
-  width: 500px;
-  height: 500px;
+  width: 50%;
+  height: 50%;
 }
 
 #docimg {
   height: 700px;
-  background-image: url(adi-goldstein-EUsVwEOsblE-unsplash.jpg);
+  background-image: url(img/adi-goldstein-EUsVwEOsblE-unsplash.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
   object-fit: fill;
 }
 
+
 #abtimg {
   height: 700px;
-  background-image: url(geometrics.jpg);
+  background-image: url(img/geometrics.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
@@ -171,7 +257,7 @@ nav a.active {
 
 #eduimg {
   height: 700px;
-  background-image: url(boban-simonovski-qkJ8sTSg0hk-unsplash.jpg);
+  background-image: url(img/boban-simonovski-qkJ8sTSg0hk-unsplash.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
@@ -245,26 +331,6 @@ nav a.active {
 
 section {
   padding: 2rem;
-}
-
-table, th, td {
-  border: 1px solid #6C1E72;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-object {
-  height: 700px;
-  width: 80%;
-}
-
-th, td {
-  padding: 10px;
-  color: white;
-}
-
-th {
-  color: white;
 }
 
 #aboutme h2 {
